@@ -19,7 +19,7 @@ export default function App() {
       const cotizarCriptomoneda = async () => {
         if(consultarAPI){
           //Consultar la API para la cotización
-          const url = `https://min-api.cryptocompare.com/data/pricemulti?fsyms=${criptomoneda}&tsyms=${moneda}`
+          const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsyms=${moneda}`;
           const resultado = await axios.get(url);
 
           //console.log(resultado.data.DISPLAY[criptomoneda][moneda]);
@@ -56,7 +56,7 @@ export default function App() {
         guardarConsultarAPI={guardarConsultarAPI}
       />
     </View>
-    <View style={{ marginTop: 40 }}>
+    <View style={{ marginTop: 40}}>
     {componente}
     </View>
 
