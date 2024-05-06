@@ -8,7 +8,7 @@ const Header = () =>(
 
 const styles = StyleSheet.create({
     encabezado:{
-        paddingTop: Platform.OS === 'ios' ? 50 : 10,
+        paddingTop: 50,
         fontWeight: 'bold',
         backgroundColor: '#5E49E2',
         paddingBottom: 10,
@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase',
         fontSize: 20,
         color: '#FFF',
-        marginBottom: 30,
     }
 
 })
